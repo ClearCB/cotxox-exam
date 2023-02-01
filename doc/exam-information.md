@@ -1,6 +1,8 @@
+# Logical methods
+
 ## Clase Carrera
 
-#### ATRIBUTOS
+### ATRIBUTOS
 
 * crea las variables de instancia que estimes oportunas.
 * tiempoEsperado del trayecto
@@ -8,7 +10,7 @@
 * costeTotal real del trayecto
 * conductor asignado a la carrera
 
-#### MÉTODOS
+### MÉTODOS
 
 * getTarjetaCredito() devuelve el número de la tarjeta de crédito del usuario/a.
 * getOrigen() devuelve el lugar de origen del trayecto.
@@ -27,7 +29,7 @@ tras el servicio.
 
 ## Clase Tarifa
 
-#### ATRIBUTOS
+### ATRIBUTOS
 
 * costeMilla Cotxox fija en 1.35€ el coste de la milla.
 * costeMinuto Cotxox fija en 0.35€ el coste del minuto.
@@ -35,7 +37,7 @@ tras el servicio.
 porcentajeComision la comisión que cobra cotxox sobre el coste del viaje es
 del 20%.
 
-#### MÉTODOS
+### MÉTODOS
 
 * getCosteDistancia(distancia) devuelve la parte del coste del trayecto debido al a
 distancia.
@@ -46,7 +48,7 @@ que recibe en función de la distancia esperada y el tiempo esperado. El coste t
 
 ## Clase Conductor
 
-#### ATRIBUTOS
+### ATRIBUTOS
 
 * nombre del conductor
 * modelo modelo del coche
@@ -55,18 +57,18 @@ que recibe en función de la distancia esperada y el tiempo esperado. El coste t
 valoraciones array de longitud variable que almacena todas las valoraciones del
 conductor ocupado indica si el conductor está prestando un servicio o está libre.
 
-#### MÉTODOS
+### MÉTODOS
 
 * setValoracion(valoracion) añade la nueva valoración y actualiza la valoración
 media del conductor.
 
 ## Clase PoolConductores
 
-#### ATRIBUTOS
+### ATRIBUTOS
 
 * poolConductores es un array de longitud variable de conductor es
 
-#### MÉTODOS
+### MÉTODOS
 
 * El constructor PoolConductores(conductores) recibe un array de longitud variable
 de conductores.

@@ -1,5 +1,7 @@
 package edu.craptocraft.cotxox;
 
+import edu.craptocraft.cotxox.carrera.Carrera;
+
 public class Cotxox {
 
 	public static void main(String[] args) {
@@ -20,22 +22,21 @@ public class Cotxox {
 		carrera.setDestino(destino);
 		carrera.setDistancia(distancia);
 		carrera.setTiempoEsperado(tiempoEsperadoMinutos);
-		carrera.toString();
 
-		// System.out.println("\n#####" + "\t Set Pickup: \t" + "#####\n");
+		System.out.println("\n#####" + "\t Set Pickup: \t" + "#####\n");
 
-		// System.out.println("Visa: " + carrera.getTarjetaCredito());
-		// System.out.println("From: " + carrera.getOrigen());
-		// System.out.println("To: " + carrera.getDestino());
-		// System.out.println("Distance: " + carrera.getDistancia());
+		System.out.println("Visa: " + carrera.getTarjetaCredito());
+		System.out.println("From: " + carrera.getOrigen());
+		System.out.println("To: " + carrera.getDestino());
+		System.out.println("Distance: " + carrera.getDistancia());
 
-		// System.out.println("\n#####" + "\t See your Cost: \t" + "#####\n");
+		System.out.println("\n#####" + "\t See your Cost: \t" + "#####\n");
 
-		// System.out.println("Visa: " + carrera.getTarjetaCredito());
-		// System.out.println("From: " + carrera.getOrigen());
-		// System.out.println("To: " + carrera.getDestino());
-		// System.out.println("Distance: " + carrera.getDistancia());
-		// System.out.println("Total: " + carrera.getCosteEsperado() + "€");
+		System.out.println("Visa: " + carrera.getTarjetaCredito());
+		System.out.println("From: " + carrera.getOrigen());
+		System.out.println("To: " + carrera.getDestino());
+		System.out.println("Distance: " + carrera.getDistancia());
+		System.out.println("Total: " + carrera.getCosteEsperado() + "€");
 
 		// System.out.println("\n#####" + "\t Get a ride: Driver: \t" + "#####\n");
 

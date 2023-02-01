@@ -18,10 +18,14 @@ public class CarreraTest {
 
 		Carrera carrera = new Carrera(tarjetaCredito);
         assertNotNull(carrera);
-        assertEquals("La carrera se inicia en: " + carrera.getOrigen()+"."+
-                     "\nEl destino es: " + carrera.getDestino()+"."+
-                     "\nHay una distancia de: " + carrera.getDistancia() + "Km."+
-                     "\nEl cliente ha esperado: " + carrera.getTiempoEsperadoMinutos + "minutos."
+		carrera.setOrigen(origen);
+		carrera.setDestino(destino);
+		carrera.setDistancia(distancia);
+		carrera.setTiempoEsperado(tiempoEsperadoMinutos);
+        assertEquals("La carrera se inicia en: Aeroport Son Sant Joan."+
+                     "\nEl destino es: Magaluf."+
+                     "\nHay una distancia de: 7.75 km."+
+                     "\nEl cliente ha esperado: 10 minutos."
                                                 , carrera.toString());
     }
 }
