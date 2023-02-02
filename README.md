@@ -1,5 +1,7 @@
 # Cotxox exam
 
+IMPORTANT! All the starting information was provided by my teacher before doing the exam. (UML, userstories, etc.)
+
 This is a repository in which I will solve the exam that consist on creating a program that reproduce the functionality of the app called "Cotxox". It is important to know that the language based of my subject is spanish, that is way the source code will be in spanish. Otherwise, the implementation and logic about the software would be the same just changing the language.
 
 I will use mainly all the information that is located [here](./doc/) and Test Driven Development (TDD) to create the software needed to complete the exam. In case you want to check the solution of my teacher: [dfleta-cotxox](https://github.com/dfleta/cotxox)
