@@ -24,9 +24,9 @@ public class ConductorTest {
         conductor.setMatricula("4ABC123");
         conductor.setModelo( "Chevy Malibu");
         conductor.setValoracion((byte) 4);
-        assertEquals(4.0, conductor.getValoracionMedia(), 0);
+        assertEquals(4.0, conductor.getValoracion(), 0);
 
         conductor.setValoracion((byte) 5);
-        assertEquals(4.5, conductor.getValoracionMedia(), 0);
+        assertEquals(4.5, conductor.getValoracion(), 0);
     }
 }

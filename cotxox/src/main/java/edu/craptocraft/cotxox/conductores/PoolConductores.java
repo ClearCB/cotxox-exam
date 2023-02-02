@@ -18,7 +18,7 @@ public class PoolConductores {
 
         Conductor ningunoLibre = null;
         Optional<Conductor> conductorAsignado = this.getPoolConductores().stream()
-                                                     .filter(Conductor::isOcupado)
+                                                     .filter(conductor -> !conductor.isOcupado())
                                                      .findFirst();
 
         return conductorAsignado.isPresent() ? conductorAsignado.get() : ningunoLibre;
