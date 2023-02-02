@@ -1,5 +1,7 @@
 package edu.craptocraft.cotxox.carrera;
 
+import edu.craptocraft.cotxox.tarifa.Tarifa;
+
 public class Carrera {
     private String tarjetaCredito;
     private String origen;
@@ -9,8 +11,7 @@ public class Carrera {
     private int tiempoCarrera;
     private double costeTotal;
     private int propina;
-    // private Conductor conductor;
-
+    
     public Carrera(String tarjetaCredito){
         this.tarjetaCredito = tarjetaCredito;
     }
@@ -44,6 +45,10 @@ public class Carrera {
         this.distancia = distancia;
     }
 
+    public double getCosteEsperado(){
+        return Tarifa.getCosteTotalEsperado(this);
+    }
+
     public int getTiempoEsperado() {
         return this.tiempoEsperado;
     }
@@ -74,8 +79,8 @@ public class Carrera {
 
         informacionCarrera.append("La carrera se inicia en: " + this.getOrigen() + ".");
         informacionCarrera.append("\nEl destino es: " + this.getDestino() + ".");
-        informacionCarrera.append("\nHay una distancia de: " + this.getDistancia() + " km.");
-        informacionCarrera.append("\nEl cliente ha esperado: " + this.getTiempoEsperado() + " minutos.");
+        informacionCarrera.append("\nHay una distancia de: " + this.getDistancia() + " millas.");
+        informacionCarrera.append("\nSe espera que el trayecto dure: " + this.getTiempoEsperado() + " minutos.");
 
         return informacionCarrera.toString();
     }
