@@ -1,6 +1,11 @@
 package edu.craptocraft.cotxox;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import edu.craptocraft.cotxox.carrera.Carrera;
+import edu.craptocraft.cotxox.conductores.Conductor;
+import edu.craptocraft.cotxox.conductores.PoolConductores;
 
 public class Cotxox {
 
@@ -38,40 +43,40 @@ public class Cotxox {
 		System.out.println("Distance: " + carrera.getDistancia());
 		System.out.println("Total: " + carrera.getCosteEsperado() + "€");
 
-		// System.out.println("\n#####" + "\t Get a ride: Driver: \t" + "#####\n");
+		System.out.println("\n#####" + "\t Get a ride: Driver: \t" + "#####\n");
 
-		// /**
-		//  * Necesitamos crear la flota de conductores de donde seleccionar uno
-		//  * para ofrecer el servicio.
-		//  * La flota es un objeto de tipo PoolConductores.
-		//  */
+		/**
+		 * Necesitamos crear la flota de conductores de donde seleccionar uno
+		 * para ofrecer el servicio.
+		 * La flota es un objeto de tipo PoolConductores.
+		 */
 
-		// List<Conductor> poolConductores = new ArrayList<Conductor>();
-		// Conductor conductor = null;
+		List<Conductor> poolConductores = new ArrayList<Conductor>();
+		Conductor conductor = null;
 
 		// // creamos objetos conductor y los metemos en el array
 
-		// String[] nombres = { "Samantha", "Fox", "Mola" };
-		// for (String nombre : nombres) {
-		// 	conductor = new Conductor(nombre);
-		// 	poolConductores.add(conductor);
-		// }
+		String[] nombres = { "Samantha", "Fox", "Mola" };
+		for (String nombre : nombres) {
+			conductor = new Conductor(nombre);
+			poolConductores.add(conductor);
+		}
 
-		// String[] matricula = { "4ABC123", "5DHJ444", "7JKK555" };
-		// String[] modelos = { "Chevy Malibu", "Toyota Prius", "Mercedes A" };
+		String[] matricula = { "4ABC123", "5DHJ444", "7JKK555" };
+		String[] modelos = { "Chevy Malibu", "Toyota Prius", "Mercedes A" };
 
-		// int index = 0;
-		// for (Conductor conductora : poolConductores) {
-		// 	conductora.setMatricula(matricula[index]);
-		// 	conductora.setModelo(modelos[index]);
-		// 	// suponemos que las conductoras tienen una valoracion inicial de 4 stars
-		// 	conductora.setValoracion((byte) 4);
-		// 	index++;
-		// }
+		int index = 0;
+		for (Conductor conductora : poolConductores) {
+			conductora.setMatricula(matricula[index]);
+			conductora.setModelo(modelos[index]);
+			// suponemos que las conductoras tienen una valoracion inicial de 4 stars
+			conductora.setValoracion((byte) 4);
+			index++;
+		}
 
-		// // Creamos el objeto flota de conductores, de la clase PoolConductores.
+		// Creamos el objeto flota de conductores, de la clase PoolConductores.
 
-		// PoolConductores conductores = new PoolConductores(poolConductores);
+		PoolConductores conductores = new PoolConductores(poolConductores);
 
 		// /* Seleccion del conductor en la flota y asignacion a la carrera */
 

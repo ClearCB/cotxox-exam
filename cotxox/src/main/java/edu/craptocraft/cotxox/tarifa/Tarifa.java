@@ -6,7 +6,7 @@ public final class Tarifa {
     protected static final double COSTE_MILLA = 1.35;
     protected static final double COSTE_MINUTO = 0.35;
     protected static final double COSTE_MINIMO = 5;
-    protected static final double PORCENTAJE_COMISION = 0.2;
+    protected static final double PORCENTAJE_COMISION = 20;
 
     private Tarifa(){}
 
