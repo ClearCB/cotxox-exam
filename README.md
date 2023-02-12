@@ -6,6 +6,8 @@ This is a repository in which I will solve the exam that consist on creating a p
 
 I will use mainly all the information that is located [here](./doc/) and Test Driven Development (TDD) to create the software needed to complete the exam. In case you want to check the solution of my teacher: [dfleta-cotxox](https://github.com/dfleta/cotxox)
 
+This app is a replica about a system that is similar to the popular app known as "uber".
+
 ## UML Class Diagram
 
 Here is the UML class diagram my teacher provided to create the software.
